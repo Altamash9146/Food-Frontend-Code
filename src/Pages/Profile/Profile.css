@@ -178,4 +178,8 @@ position: absolute;
         height: 30vh;
     }
 
+    .profile-height-container{
+        min-height: 79vh;
+    }
+
 }

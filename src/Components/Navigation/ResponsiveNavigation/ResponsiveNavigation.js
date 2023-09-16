@@ -72,8 +72,15 @@ const ResponsiveNavigation = () => {
   };
 
   const handleLogout = ()=>{
+    nav('/')
     dispatch(logout())
 }
+
+const handleProfile = ()=>{
+  nav('/profile')
+  setShowDropdown(false)
+}
+
 
   return (
    <>
@@ -444,7 +451,7 @@ const ResponsiveNavigation = () => {
               <div
               className='nav-dropdown-logout'
             >
-              <div style={{color:'white', }}>Profile</div>
+              <div style={{color:'white', }} onClick={handleProfile}>Profile</div>
               <div style={{color:'white' ,paddingTop:'10px'}}>Add a Recipe</div>
               <div style={{color:'white' ,paddingTop:'10px'}}>User Settings</div>
               <div

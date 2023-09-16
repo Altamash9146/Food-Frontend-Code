@@ -109,7 +109,7 @@ const Signup = () => {
                               </button>
                             </div>
 
-                                <button type='submit' className='login-btn' disabled={isLoading}>CREATE ACCOUNT</button> 
+                                <button className='login-btn' disabled={isLoading}>CREATE ACCOUNT</button> 
                          
                                 <div className='terms-and-condition-container'>
                                 <div

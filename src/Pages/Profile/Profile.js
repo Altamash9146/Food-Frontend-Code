@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './Profile.css'
 import {useSelector} from 'react-redux'
 import {BsCircle, BsCamera} from 'react-icons/bs'
@@ -13,9 +13,19 @@ const Profile = () => {
 
     const [label,setlabel]= useState("Activity")
     const [selectedFilter, setSelectedFilter] = useState("Activity");
+    const [username, setUsername] = useState('');
 
-    const user = useSelector((state) => state.user)
-    console.log(user);
+        const user = useSelector((state) => state.user)
+        // console.log(username);
+
+    useEffect(() => {
+     if(user){
+      setUsername(user ? user.username : '');
+     }
+    }, [user]);
+  
+    console.log(username);
+    // console.log(user);
 
     const profileData = [
         { label: "Activity", key: "Activity" , icons: <VscCircle/> , },
@@ -35,7 +45,7 @@ const Profile = () => {
         
 
   return (
-    <div>
+    <div className='profile-height-container'>
     <div className='top-profile-cntnr'>
         <div className='linearGradient'></div>
         <div className='emj-follower-cntr'>
@@ -48,7 +58,7 @@ const Profile = () => {
        <div className='follower'><span>FOLLOWING</span> <span>0</span></div>
        </div>
        </div>
-       <h2 className='email-shower'>@{user.username}</h2>
+       <h2 className='email-shower'>@{username}</h2>
     </div>
     <div className='profile_static_cntr'>
 
@@ -76,7 +86,7 @@ profileData.map((item)=>(
 </div>
 <div>
 <h3>UH OH!</h3>
-<div>Looks like {user.username} has no {label}!</div>
+<div>Looks like {username} has no {label}!</div>
 </div>
 </div>
 </section>
@@ -112,7 +122,7 @@ profileData.map((item)=>(
 </div>
 <div>
 <h3>UH OH!</h3>
-<div>Looks like {user.username} has no {label}!</div>
+<div>Looks like {username} has no {label}!</div>
 </div>
 </div>
 </section>

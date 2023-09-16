@@ -25,29 +25,12 @@ const SignIn = () => {
     setFormdata({...formdata , [name]:value})
 }
 
-// const handleOnSubmit = async (event) => {
-//   event.preventDefault();
-//   try {
-//     const response = await login({ ...formdata });
-    
-//     if (response.data) {
-//       nav('/');
-//     } else if (response.error && response.error.message === 'Invalid Credentials') {
-//       console.log('Invalid Credentials');
-//     }
-//   } catch (error) {
-//     console.error('Login error:', error);
-//   }
-// }
-
 const handleOnSubmit = async (event) => {
   event.preventDefault();
   try {
     const response = await login({ ...formdata });
-
-    if (response.data.token) {
-      const token = response.data.token;
-      localStorage.setItem('jwtToken', token);
+    
+    if (response.data) {
       nav('/');
     } else if (response.error && response.error.message === 'Invalid Credentials') {
       console.log('Invalid Credentials');
@@ -55,7 +38,24 @@ const handleOnSubmit = async (event) => {
   } catch (error) {
     console.error('Login error:', error);
   }
-};
+}
+
+// const handleOnSubmit = async (event) => {
+//   event.preventDefault();
+//   try {
+//     const response = await login({ ...formdata });
+
+//     if (response.data) {
+//       // const token = response.data.token;
+//       // localStorage.setItem('jwtToken', token);
+//       nav('/');
+//     } else if (response.error && response.error.message === 'Invalid Credentials') {
+//       console.log('Invalid Credentials');
+//     }
+//   } catch (error) {
+//     console.error('Login error:', error);
+//   }
+// };
 
   
   const displayLogin = ()=>{
@@ -122,7 +122,7 @@ const handleOnSubmit = async (event) => {
                                       </button>
                                     </div>
 
-                                <button type='submit' className='login-btn' disabled={isLoading}>LOG IN</button> 
+                                <button  className='login-btn' disabled={isLoading}>LOG IN</button> 
                                 <div className='forgot-password'>Forgot Password ?</div>
 
                                 <div className='login-form-social-container'>
