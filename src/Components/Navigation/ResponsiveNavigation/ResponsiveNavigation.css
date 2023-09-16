@@ -1,0 +1,133 @@
+.responsive-nav{
+    display: none;
+}
+
+@media screen and (min-width:330px) and (max-width:950px){
+    .responsive-nav{
+        display: block;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .dropdown{
+        position: relative;
+        overflow-y: scroll;
+    }
+
+
+    .heading{
+        /* justify-content: flex-start; */
+        /* position: relative; */
+    margin-right: 74px;
+    }
+
+    .icons-parent{
+        position: absolute;
+        top: 20px;
+        left: 68%;
+        /* height: 50px; */
+        /* float: right; */
+        justify-content: flex-end;
+    }
+
+    .hamburger-icon{
+        color: white;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    .cross-icon{
+        color: white;
+        /* position: absolute; */
+        /* top: 20px; */
+        /* left: 10px; */
+        /* margin-top: -0px; */
+        padding-left: 14px;
+        transform: translateY(-50px);
+        /* transform: translate3d(10px, 10px, 10px); */
+    }
+
+    .nav-main-panel{
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+        color: white;
+        height: 93vh;
+        padding-left: 10px;
+        margin-top: -35px;
+        padding-top: 5px;
+        overflow-y: hidden;
+    }
+
+    .nav-list-item_{
+        width: 96vw;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-list-item_.active {
+        border-bottom: 3px solid aquamarine;
+        width: 80px;
+      }
+      
+
+
+    .arrow{
+        padding-right: 5px;
+    }
+
+    .nav-dropdown-logout{
+        width: 116px;
+        position: absolute;
+        top: 46px;
+        right: -17px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .responsive-nav{
+            height: 8vh;
+        }
+
+        .heading{
+            margin-left: -64%;
+        }
+
+        .icons-parent{
+            left: 85%;
+        }
+
+        .nav-list{
+            height: 94vh;
+        }
+        
+        .hamburger-icon{
+            margin-top: 3px;
+        }
+
+        .nav-list-item_{  
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-dropdown-logout{
+            right: -11px;
+        }
+}

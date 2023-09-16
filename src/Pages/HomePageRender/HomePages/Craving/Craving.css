@@ -1,0 +1,126 @@
+:root{
+    --aspect-ratio:1/1
+}
+
+.craving-main-container{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.home-pages-heading{
+    font-size: 32px;
+    line-height: 40px;
+    --current-line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+.craving-images-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.c-image-container {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.craving-image{
+    width: 100%;
+    height: 300px;
+    aspect-ratio: var(--aspect-ratio, initial);
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.image-text {
+    /* position: absolute; */
+    position: relative;
+    top: -93px;
+    /* bottom: 3px; */
+    /* left: 0; */
+    width: 100%;
+    /* background-color: black; */
+    background: linear-gradient(to top,#000000 0%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    /* padding: 10px; */
+    font-weight: 600;
+    font-size: 28px;
+    /* margin-top: -100px; */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 89px;
+}
+
+
+.collection-word{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width:330px) and (max-width:950px){
+    .craving-main-container{
+    /* position: relative; */
+    /* position: static; */
+    top: 352px;
+    /* top: 64%; */
+    width: 98%;
+    /* display: none; */
+    /* padding-top: 372px; */
+
+    }
+
+    .home-pages-heading{
+        width: 82%;
+        /* padding-left: 18px; */
+        font-size: 27px;
+    }
+
+    .craving-images-container{
+        display: grid;
+        padding-left: 5px;
+    }
+
+    .image-text{
+        position: relative;
+        background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    
+    .craving-image{
+        padding-top: 17px;
+    }
+
+    .c-image-container{
+    padding: 0;
+    height: 324px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .craving-main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 17px;
+        width: 96%;
+    }
+
+    .craving-images-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .craving-image{
+    height: 222px;
+    }
+
+    .c-image-container{
+    padding: 0;
+    height: 324px;
+    }
+}

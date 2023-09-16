@@ -1,0 +1,147 @@
+.navigation-main-container{
+    display: flex;
+    justify-content:flex-start;
+    background-color: #000;
+}
+
+.nav-item-container{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid aquamarine;
+}
+
+.common-nav-item-style{
+    text-decoration: none;
+    color: white;
+}
+
+.common-nav-item-style:hover{
+    color: aquamarine;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold; 
+     font-size: 45px;
+     cursor: pointer;
+     font-family: brandon-grotesque, "Helvetica Neue", Helvetica, arial, sans-serif;
+    padding-left: 25px;
+    }
+
+.heading-bullet{
+    color: yellow;
+    font-weight: bold; 
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
+.dropdown{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    background-color: #000;
+    text-align: left;
+    width: max-content;
+    position: absolute;
+    padding: 0 15px;
+    z-index: 1;
+    margin-left: -10px;
+}
+  
+
+.dropdown_item{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.dropdown_item:hover{
+    color: aquamarine;
+}
+
+.dropdown_item_last{
+    margin-top: 21px;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.btn{
+    background-color:#000;
+    
+}
+
+.icons-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    cursor: pointer;
+}
+
+.icons-parent svg {
+    width: 22px;
+    height: 24px;
+    fill: white;
+  }
+  
+  .icons-parent svg:hover {
+    fill: aquamarine; 
+  }
+
+  .nav-dropdown-logout{
+  position: absolute;
+  top: 68px;
+  right: 0;
+  background-color: black;
+  z-index: 1;
+    padding:30px 12px 30px 16px ;
+  }
+
+.logout-btn{
+    margin: 0 auto;
+    display: block !important;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    /* position: absolute; */
+    /* left: 0; */
+  }
+
+.logout-btn:hover{
+    border: none;
+}
+  
+
+  @media screen and (min-width:330px) and (max-width:950px){
+    .navigation-main-container{
+        display: none;
+    }
+
+    
+  }
+  
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .navigation-main-container{
+        display: none;
+    }
+  }

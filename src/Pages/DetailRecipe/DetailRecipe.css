@@ -1,0 +1,119 @@
+.detail-recipe-main{
+    width: 50vw;
+    text-align: center;
+}
+
+.detail-recipe-heading,.detail-recipe-ingredients{
+    padding-left: 42px;
+}
+
+
+.detail-recipe-action-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.action-icon{
+    background-color: rgb(194, 195, 198);
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.detail-recipe-image{
+    width: 100%;
+    padding-left: 41px;
+    height: 63vh;
+}
+
+.camera-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 19px;
+    padding-left: 14px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:330px) and (max-width:950px){
+    .detail-recipe-main{
+        width: 100%;
+        /* width: 78vw; */
+        /* text-align: center; */
+    }
+
+    .detail-recipe-heading{
+        padding-left: 11px;
+    }
+
+    .detail-recipe-action-icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        width: 97%;
+        cursor: pointer;
+        margin-left: -30px;
+    }
+
+    .action-icon{
+        background-color: rgb(194, 195, 198);
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 5px;
+    }
+
+    .camera-icon{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 9px;
+    /* padding-left: 14px; */
+    border-radius: 7px;
+    cursor: pointer;
+    }
+
+    .detail-recipe-image{
+        width: 94%;
+        padding-left: 0px;
+        height: 38vh;
+    }
+
+    .detail-recipe-ingredients{
+        padding-left: 15px;
+    }
+
+    .detail-recipe-list{
+        list-style-type: none;
+        margin-left: -25px;
+    }
+}
+
+
+@media  (min-width:744px) and (max-width:1024px){
+
+    .detail-recipe-main{
+        width: 78vw;
+    }
+
+    .detail-recipe-image{
+        width: 87%;
+        /* padding-left: 41px; */
+        height: 36vh;
+    }
+
+}

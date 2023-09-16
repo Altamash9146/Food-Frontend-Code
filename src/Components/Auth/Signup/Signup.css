@@ -1,0 +1,83 @@
+.signup-recipe-text{
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-input-label{
+    padding-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(47, 47, 47);
+    font-family: brandon-grotesque, "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.signup-toggle-password-btn{
+    background: rgb(242, 242, 242);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: -18px;
+    top: 45%;
+    transform: translateY(-45%);  
+    color: rgb(172, 172, 172);
+    font-family: Gotham, "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-size: 18px; 
+}
+
+.terms-and-condition-container{
+    border: 2px solid white;
+    position: relative;
+    left: 10%;
+}
+
+.terms-text{
+    float: right;
+    font-weight: 200;
+    color: rgb(56, 54, 54);
+}
+  
+.custom-checkbox-label {
+    width: 20px; 
+    height: 20px;
+    background-color: white; 
+    border: 1px solid rgb(131, 128, 128);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; 
+    cursor: pointer;
+    user-select: none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: -31px;
+    top: 26px;
+  }
+  
+.custom-checkbox-label.checked {
+    background-color: grey; 
+    color: black;
+  }
+  
+.tick-mark {
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+.close-btn-backgroung{
+    background-color: aqua;
+}
+
+
+
+

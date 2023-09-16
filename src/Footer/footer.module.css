@@ -1,0 +1,153 @@
+.footer {
+  background-color: black;
+   padding: 16px 30px;
+   color: #fff;
+ }
+
+ .footer_1st_div{
+   display: flex;
+ }
+ 
+ .scrollArrow{
+   cursor: pointer;
+   font-size: 19px;
+   color: #fff;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   padding-top: 1rem;
+   /* background-color: black; */
+ }
+
+ .footer_cnt1{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+ }
+
+ .scrollText{
+   cursor: pointer;
+   font-size: 16px;
+    color: #ffff;
+    font-size: 12pt;
+    padding-top: 1rem;
+ }
+
+.footer_img_cntnr{
+ list-style: none;
+display: flex;
+padding-left: 0;
+ }
+
+ .footer_2nd_div{
+   list-style: none;
+display: flex;
+padding-left: 0;
+font-size: 10pt;
+
+/* gap: 1.5rem; */
+ }
+
+ .footer_img_cntnr li{
+   width: 40px;
+   height: 40px;
+   color: #fff;
+ }
+
+ .footer_sub{
+   /* display: grid;
+   grid-template-columns: 1fr 1fr; */
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .blue{
+   color: #77E2E1;
+ }
+
+
+ .footer_cnt2 {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   font-size: 8pt;
+}
+.footer_cnt3 {
+ /* width: 50%; */
+ text-align: right;
+}
+
+.footer_cnt4 {
+ /* width: 50%; */
+ text-align: right;
+}
+
+.footer_2nd_div li{
+ 
+ padding: 7px 14px 0 0;
+}
+
+.california{
+display: flex;
+justify-content: flex-end;
+}
+
+.footer_advetise{
+ list-style: none;
+ display: flex;
+ padding-left: 0;
+ justify-content: flex-end;
+ /* gap: 1.5rem; */
+ /* flex-direction: row-reverse; */
+}
+
+.footer_advetise li {
+ 
+ padding: 7px 14px 0 0;
+}
+
+
+@media (max-width:600px){
+  .footer {
+     /* position: absolute; */
+    /* transform: translateY(2008%); */
+    /* padding: 0 0 0 5px; */
+    /* width: 98.6vw; */
+    /* display: none; */
+    position: static;
+  }
+
+ .footer_sub{
+ display: block;
+}
+
+.footer_cnt1{
+ width: 100%;
+ }
+
+ .footer_cnt2{
+   width: 100%;
+   }
+
+   .footer_cnt3 {
+     text-align: start;
+     padding-top: 10px;
+ }
+
+ .footer_cnt4 {
+   text-align: start;
+}
+
+.california {
+ justify-content: flex-start;
+}
+
+.footer_advetise {
+ justify-content: flex-start;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .footer{
+       /* display: none; */
+  }
+}
